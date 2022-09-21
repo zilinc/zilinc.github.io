@@ -1,0 +1,195 @@
+@INPROCEEDINGS{Keller_MAOCRKH_13,
+author = {Keller, Gabriele and Murray, Toby and Amani, Sidney and O'Connor, Liam and Chen, Zilin and Ryzhyk, Leonid and Klein, Gerwin and Heiser, Gernot},
+title = {File Systems Deserve Verification Too!},
+year = {2013},
+isbn = {9781450324601},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2525528.2525530},
+doi = {10.1145/2525528.2525530},
+abstract = {File systems are too important, and current ones are too buggy, to remain unverified. Yet the most successful verification methods for functional correctness remain too expensive for current file system implementations --- we need verified correctness but at reasonable cost. This paper presents our vision and ongoing work to achieve this goal for a new high-performance flash file system, called BilbyFs. BilbyFs is carefully designed to be highly modular, so it can be verified against a high-level functional specification one component at a time. This modular implementation is captured in a set of domain specific languages from which we produce the design-level specification, as well as its optimised C implementation. Importantly, we also automatically generate the proof linking these two artefacts. The combination of these features dramatically reduces verification effort. Verified file systems are now within reach for the first time.},
+booktitle = {Proceedings of the Seventh Workshop on Programming Languages and Operating Systems},
+articleno = {1},
+numpages = {7},
+location = {Farmington, Pennsylvania},
+series = {PLOS '13}
+}
+
+@REPORT{OConnorDavis_KAMKCR_14:tr,
+  AUTHOR = {O'Connor, Liam and Keller, Gabriele and Amani, Sidney and Murray, Toby and Klein, Gerwin and Chen, Zilin and Rizkallah, Christine},
+  INSTITUTION = {NICTA},
+  LOCATION = {Sydney, Australia},
+  year = {2014-10},
+  ISSN = {1833-9646-8393},
+  TITLE = {{{CDSL}} Version 1: Simplifying Verification with Linear Types},
+  TYPE = {Technical Report},
+}
+
+@INPROCEEDINGS{Amani_HCRCOBNLSTKMKH_16,
+author = {Amani, Sidney and Hixon, Alex and Chen, Zilin and Rizkallah, Christine and Chubb, Peter and O'Connor, Liam and Beeren, Joel and Nagashima, Yutaka and Lim, Japheth and Sewell, Thomas and Tuong, Joseph and Keller, Gabriele and Murray, Toby and Klein, Gerwin and Heiser, Gernot},
+title = {Cogent: Verifying High-Assurance File System Implementations},
+year = {2016},
+isbn = {9781450340915},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2872362.2872404},
+doi = {10.1145/2872362.2872404},
+abstract = {We present an approach to writing and formally verifying high-assurance file-system code in a restricted language called Cogent, supported by a certifying compiler that produces C code, high-level specification of Cogent, and translation correctness proofs. The language is strongly typed and guarantees absence of a number of common file system implementation errors. We show how verification effort is drastically reduced for proving higher-level properties of the file system implementation by reasoning about the generated formal specification rather than its low-level C code. We use the framework to write two Linux file systems, and compare their performance with their native C implementations.},
+booktitle = {Proceedings of the Twenty-First International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {175–188},
+numpages = {14},
+keywords = {verification, co-generation, domain-specific languages, file systems, isabelle/hol},
+location = {Atlanta, Georgia, USA},
+series = {ASPLOS '16}
+}
+
+@INPROCEEDINGS{OConnor_CRALMNSK_16,
+author = {O'Connor, Liam and Chen, Zilin and Rizkallah, Christine and Amani, Sidney and Lim, Japheth and Murray, Toby and Nagashima, Yutaka and Sewell, Thomas and Klein, Gerwin},
+title = {Refinement through Restraint: Bringing down the Cost of Verification},
+year = {2016},
+isbn = {9781450342193},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2951913.2951940},
+doi = {10.1145/2951913.2951940},
+abstract = {We present a framework aimed at significantly reducing the cost of verifying certain classes of systems software, such as file systems. Our framework allows for equational reasoning about systems code written in our new language, Cogent. Cogent is a restricted, polymorphic, higher-order, and purely functional language with linear types and without the need for a trusted runtime or garbage collector. Linear types allow us to assign two semantics to the language: one imperative, suitable for efficient C code generation; and one functional, suitable for equational reasoning and verification. As Cogent is a restricted language, it is designed to easily interoperate with existing C functions and to connect to existing C verification frameworks. Our framework is based on certifying compilation: For a well-typed Cogent program, our compiler produces C code, a high-level shallow embedding of its semantics in Isabelle/HOL, and a proof that the C code correctly refines this embedding. Thus one can reason about the full semantics of real-world systems code productively and equationally, while retaining the interoperability and leanness of C. The compiler certificate is a series of language-level proofs and per-program translation validation phases, combined into one coherent top-level theorem in Isabelle/HOL.},
+booktitle = {Proceedings of the 21st ACM SIGPLAN International Conference on Functional Programming},
+pages = {89–102},
+numpages = {14},
+keywords = {Isabelle/HOL, verification, semantics, linear types, programming languages, file systems},
+location = {Nara, Japan},
+series = {ICFP 2016}
+}
+
+@INPROCEEDINGS{Rizkallah_LNSCOMKK_16,
+author="Rizkallah, Christine
+and Lim, Japheth
+and Nagashima, Yutaka
+and Sewell, Thomas
+and Chen, Zilin
+and O'Connor, Liam
+and Murray, Toby
+and Keller, Gabriele
+and Klein, Gerwin",
+editor="Blanchette, Jasmin Christian
+and Merz, Stephan",
+title="A Framework for the Automatic Formal Verification of Refinement from Cogent to C",
+booktitle="Interactive Theorem Proving",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="323--340",
+abstract="Our language Cogent simplifies verification of systems software using a certifying compiler, which produces a proof that the generated C code is a refinement of the original Cogent program. Despite the fact that Cogent itself contains a number of refinement layers, the semantic gap between even the lowest level of Cogent semantics and the generated C code remains large.",
+isbn="978-3-319-43144-4"
+}
+
+@INPROCEEDINGS{Chen_17,
+  AUTHOR = {Chen, Zilin},
+  LOCATION = {Oxford, UK},
+  URL = {https://www.cse.unsw.edu.au/~zilinc/tyde17.pdf},
+  BOOKTITLE = {The workshop on Type-Driven Development},
+  year = {2017},
+  LASTACCESSED = {April 2019},
+  SERIES = {TyDe'17},
+  TITLE = {{\textsc{Cogent}$^{\Uparrow}$}: Giving Systems Engineers A Stepping Stone (Extended abstract)},
+}
+
+@INPROCEEDINGS{Chen_OKKH_17,
+author = {Chen, Zilin and O'Connor, Liam and Keller, Gabriele and Klein, Gerwin and Heiser, Gernot},
+title = {The Cogent Case for Property-Based Testing},
+year = {2017},
+isbn = {9781450351539},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3144555.3144556},
+doi = {10.1145/3144555.3144556},
+abstract = {Property-based testing can play an important role in reducing the cost of formal verification: It has been demonstrated to be effective at detecting bugs and finding inconsistencies in specifications, and thus can eliminate effort wasted on fruitless proof attempts. We argue that in addition, property-based testing enables an incremental approach to a fully verified system, by allowing replacement of automatically generated tests of properties stated in the specification by formal proofs. We demonstrate this approach on the verification of systems code, discuss the implications on systems design, and outline the integration of property-based testing into the Cogent framework.},
+booktitle = {Proceedings of the 9th Workshop on Programming Languages and Operating Systems},
+pages = {1–7},
+numpages = {7},
+keywords = {Refinement, Cogent, QuickCheck, Formal methods, Systems software},
+location = {Shanghai, China},
+series = {PLOS'17}
+}
+
+@INPROCEEDINGS{OConnorDavis_CSRKK_18,
+author = {O’Connor, Liam and Chen, Zilin and Susarla, Partha and Rizkallah, Christine and Klein, Gerwin and Keller, Gabriele},
+title = {Bringing Effortless Refinement of Data Layouts to Cogent},
+year = {2018},
+isbn = {978-3-030-03417-7},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-030-03418-4_9},
+doi = {10.1007/978-3-030-03418-4_9},
+abstract = {The language Cogent allows low-level operating system components to be modelled as pure mathematical functions operating on algebraic data types, which makes it highly suitable for verification in an interactive theorem prover. Furthermore, the Cogent compiler translates these models into imperative C programs, and provides a proof that this compilation is a refinement of the functional model. There remains a gap, however, between the C data structures used in the operating system, and the algebraic data types used by Cogent. This forces the programmer to write a large amount of boilerplate marshalling code to connect the two, which can lead to a significant runtime performance overhead due to excessive copying.In this paper, we outline our design for a data description language and data refinement framework, called Dargent, which provides the programmer with a means to specify how Cogent represents its algebraic data types. From this specification, the compiler can then generate the C code which manipulates the C data structures directly. Once fully realised, this extension will enable more code to be automatically verified by Cogent, smoother interoperability with C, and substantially improved performance of the generated code.},
+booktitle = {Leveraging Applications of Formal Methods, Verification and Validation. Modeling: 8th International Symposium, ISoLA 2018, Limassol, Cyprus, November 5-9, 2018, Proceedings, Part I},
+pages = {134–149},
+numpages = {16},
+location = {Limassol, Cyprus}
+}
+
+@MISC{Chen_DOSRK_19,
+  AUTHOR = {Chen, Zilin and Di Meglio, Matt and O'Connor, Liam and Susarla Ajay, Partha and Rizkallah, Christine and Keller, Gabriele},
+  LOCATION = {Lisbon, Portugal},
+  PUBLISHER = {no proceedings},
+  BOOKTITLE = {PriSC},
+  year = {2019},
+  NOTE = {at PriSC},
+  TITLE = {{A} Data Layout Description Language for {Cogent} (Extended Abstract)},
+}
+
+@ARTICLE{OConnor_CRJAKMSK_21,
+AUTHOR = {O’Connor, Liam and Chen, Zilin and Rizkallah, Christine and Jackson, Vincent and Amani, Sidney and Klein, Gerwin and Murray, Toby and Sewell, Thomas and Keller, Gabriele},
+title={Cogent: uniqueness types and certifying compilation},
+volume={31},
+DOI={10.1017/S095679682100023X},
+journal={Journal of Functional Programming},
+publisher={Cambridge University Press},
+year={2021},
+pages={e25}
+}
+
+@INPROCEEDINGS{Chen_22,
+author = {Chen, Zilin},
+title = {A Hoare Logic Style Refinement Types Formalisation},
+year = {2022},
+isbn = {9781450394390},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3546196.3550162},
+doi = {10.1145/3546196.3550162},
+abstract = {Refinement types is a lightweight yet expressive tool for specifying and reasoning about programs. The connection between refinement types and Hoare logic has long been recognised but the discussion remains largely informal. In this paper, we present a Hoare triple style Agda formalisation of a refinement type system on a simply-typed λ-calculus restricted to first-order functions. In our formalisation, we interpret the object language as shallow Agda terms and use Agda’s type system as the underlying logic for the type refinement. To deterministically typecheck a program with refinement types, we reduce it to the computation of the weakest precondition and define a verification condition generator which aggregates all the proof obligations that need to be fulfilled to witness the well-typedness of the program.},
+booktitle = {Proceedings of the 7th ACM SIGPLAN International Workshop on Type-Driven Development},
+pages = {1–14},
+numpages = {14},
+keywords = {Hoare logic, refinement type, Agda, weakest precondition},
+location = {Ljubljana, Slovenia},
+series = {TyDe 2022}
+}
+
+@MISC{Chen_LOKMJR_22,
+  AUTHOR = {Chen, Zilin and Lafont, Ambroise and O'Connor, Liam and Keller, Gabriele and McLaughlin, Craig and Jackson, Vincent and Rizkallah, Christine},
+  BOOKTITLE = {The ACM SIGPLAN Symposium on Principles of Programming Languages},
+  year = {2022},
+  HOWPUBLISHED = {In submission to {The ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2023)}},
+  SERIES = {POPL 2023},
+  TITLE = {Dargent: A Silver Bullet for Data Layout Refinement},
+}
+
+@MISC{Chen_Rizkallah_22,
+  AUTHOR = {Chen, Zilin and Rizkallah, Christine},
+  BOOKTITLE = {The ACM SIGPLAN International Conference on Software Language Engineering},
+  year = {2022},
+  HOWPUBLISHED = {In submission},
+  SERIES = {SLE 2022},
+  TITLE = {Why It's Nice to be Quoted: A \textsc{Cogent} {FFI}},
+}
+
+@MISC{Chen_RKSOHK_22,
+  AUTHOR = {Chen, Zilin and Rizkallah, Christine and Klein, Gerwin and Susarla, Partha and O'Connor, Liam and Heiser, Gernot and Keller, Gabriele},
+  BOOKTITLE = {The ACM SIGPLAN International Conference on Software Language Engineering},
+  year = {2022},
+  HOWPUBLISHED = {Accepted at {The ACM SIGPLAN International Conference on Software Language Engineering (SLE 2022)}},
+  SERIES = {SLE 2022},
+  TITLE = {Property-Based Testing: Climbing the Stairway to Verification},
+}
