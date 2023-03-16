@@ -15,7 +15,7 @@ location = {Farmington, Pennsylvania},
 series = {PLOS '13}
 }
 
-@REPORT{OConnorDavis_KAMKCR_14:tr,
+@misc{OConnorDavis_KAMKCR_14:tr,
   AUTHOR = {O'Connor, Liam and Keller, Gabriele and Amani, Sidney and Murray, Toby and Klein, Gerwin and Chen, Zilin and Rizkallah, Christine},
   INSTITUTION = {NICTA},
   LOCATION = {Sydney, Australia},
@@ -27,7 +27,7 @@ series = {PLOS '13}
 
 @INPROCEEDINGS{Amani_HCRCOBNLSTKMKH_16,
 author = {Amani, Sidney and Hixon, Alex and Chen, Zilin and Rizkallah, Christine and Chubb, Peter and O'Connor, Liam and Beeren, Joel and Nagashima, Yutaka and Lim, Japheth and Sewell, Thomas and Tuong, Joseph and Keller, Gabriele and Murray, Toby and Klein, Gerwin and Heiser, Gernot},
-title = {Cogent: Verifying High-Assurance File System Implementations},
+title = {\textsc{Cogent}: Verifying High-Assurance File System Implementations},
 year = {2016},
 isbn = {9781450340915},
 publisher = {Association for Computing Machinery},
@@ -73,7 +73,7 @@ and Keller, Gabriele
 and Klein, Gerwin",
 editor="Blanchette, Jasmin Christian
 and Merz, Stephan",
-title="A Framework for the Automatic Formal Verification of Refinement from {Cogent} to {C}",
+title="A Framework for the Automatic Formal Verification of Refinement from \textsc{Cogent} to {C}",
 booktitle="Interactive Theorem Proving",
 year="2016",
 publisher="Springer International Publishing",
@@ -98,7 +98,7 @@ url = {https://doi.org/10.1007/978-3-319-43144-4_20}
 
 @INPROCEEDINGS{Chen_OKKH_17,
 author = {Chen, Zilin and O'Connor, Liam and Keller, Gabriele and Klein, Gerwin and Heiser, Gernot},
-title = {The Cogent Case for Property-Based Testing},
+title = {The \textsc{Cogent} Case for Property-Based Testing},
 year = {2017},
 isbn = {9781450351539},
 publisher = {Association for Computing Machinery},
@@ -116,7 +116,7 @@ series = {PLOS'17}
 
 @INPROCEEDINGS{OConnorDavis_CSRKK_18,
 author = {O'Connor, Liam and Chen, Zilin and Susarla, Partha and Rizkallah, Christine and Klein, Gerwin and Keller, Gabriele},
-title = {Bringing Effortless Refinement of Data Layouts to Cogent},
+title = {Bringing Effortless Refinement of Data Layouts to \textsc{Cogent}},
 year = {2018},
 isbn = {978-3-030-03417-7},
 publisher = {Springer-Verlag},
@@ -137,12 +137,12 @@ location = {Limassol, Cyprus}
   BOOKTITLE = {PriSC},
   year = {2019},
   NOTE = {at PriSC},
-  TITLE = {{A} Data Layout Description Language for {Cogent} (Extended Abstract)},
+  TITLE = {{A} Data Layout Description Language for \textsc{Cogent} (Extended Abstract)},
 }
 
 @ARTICLE{OConnor_CRJAKMSK_21,
 AUTHOR = {O'Connor, Liam and Chen, Zilin and Rizkallah, Christine and Jackson, Vincent and Amani, Sidney and Klein, Gerwin and Murray, Toby and Sewell, Thomas and Keller, Gabriele},
-title={Cogent: uniqueness types and certifying compilation},
+title={\textsc{Cogent}: uniqueness types and certifying compilation},
 volume={31},
 DOI={10.1017/S095679682100023X},
 journal={Journal of Functional Programming},
@@ -169,29 +169,59 @@ location = {Ljubljana, Slovenia},
 series = {TyDe 2022}
 }
 
-@MISC{Chen_LOKMJR_22,
-  AUTHOR = {Chen, Zilin and Lafont, Ambroise and O'Connor, Liam and Keller, Gabriele and McLaughlin, Craig and Jackson, Vincent and Rizkallah, Christine},
-  BOOKTITLE = {The ACM SIGPLAN Symposium on Principles of Programming Languages},
-  year = {2022},
-  HOWPUBLISHED = {In submission to {The ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2023)}},
-  SERIES = {POPL 2023},
-  TITLE = {Dargent: A Silver Bullet for Data Layout Refinement},
+
+@misc{Chen_Rizkallah_22,
+  author = {Zilin Chen 
+           and Christine Rizkallah
+           },
+  year = 2022,
+  title = {Why It's Nice to be Quoted: A \textsc{Cogent} {FFI}},
+  note = {Paper draft},
 }
 
-@MISC{Chen_Rizkallah_22,
-  AUTHOR = {Chen, Zilin and Rizkallah, Christine},
-  BOOKTITLE = {The ACM SIGPLAN International Conference on Software Language Engineering},
-  year = {2022},
-  HOWPUBLISHED = {In submission},
-  SERIES = {SLE 2022},
-  TITLE = {Why It's Nice to be Quoted: A \textsc{Cogent} {FFI}},
-}
 
-@MISC{Chen_RKSOHK_22,
-  AUTHOR = {Chen, Zilin and Rizkallah, Christine and Klein, Gerwin and Susarla, Partha and O'Connor, Liam and Heiser, Gernot and Keller, Gabriele},
-  BOOKTITLE = {The ACM SIGPLAN International Conference on Software Language Engineering},
-  year = {2022},
-  HOWPUBLISHED = {Accepted at {The ACM SIGPLAN International Conference on Software Language Engineering (SLE 2022)}},
-  SERIES = {SLE 2022},
-  TITLE = {Property-Based Testing: Climbing the Stairway to Verification},
+@inproceedings{Chen_ROSKHK_22,
+    address          = {Auckland, New Zealand},
+    artefact         = {https://zenodo.org/record/7248640},
+    author           = {Zilin Chen and Christine Rizkallah and Liam O'Connor and Partha Susarla and Gerwin Klein and Gernot
+                        Heiser and Gabriele Keller},
+    booktitle        = {ACM SIGPLAN International Conference on Software Language Engineering},
+    doi              = {10.1145/3567512.3567520},
+    month            = dec,
+    numpages         = {14},
+    paperurl         = {https://trustworthy.systems/publications/papers/Chen_ROSKHK_22.pdf},
+    publisher        = {ACM},
+    series           = {SLE 2022},
+    title            = {Property-Based Testing: Climbing the Stairway to Verification},
+    year             = {2022},
+  }
+
+@article{Chen_LOKMJR_23,
+    address          = {New York, NY, USA},
+    articleno        = {47},
+    author           = {Zilin Chen and Ambroise Lafont and Liam O’Connor and Gabriele Keller and Craig McLaughlin and
+                        Vincent Jackson and Christine Rizkallah},
+    doi              = {10.1145/3571240},
+    journal          = {Proc. ACM Program. Lang.},
+    month            = jan,
+    number           = {POPL},
+    numpages         = {27},
+    paperurl         = {https://trustworthy.systems/publications/papers/Chen_LOKMJR_23.pdf},
+    publisher        = {ACM},
+    title            = {\textsc{Dargent}: A Silver Bullet for Verified Data Layout Refinement},
+    url              = {https://doi.org/10.1145/3571240},
+    volume           = {7},
+    year             = {2023}
+  }
+
+
+@phdthesis{Chen:phd,
+  address          = {UNSW Sydney, Australia},
+  author           = {Chen, Zilin},
+  month            = mar,
+  school           = {CSE, UNSW Sydney},
+  title            = {Towards A Practical High-Assurance Systems Programming Language},
+  url              = {http://hdl.handle.net/1959.4/101026},
+  doi              = {https://doi.org/10.26190/unsworks/24733},
+  year             = {2023}
 }

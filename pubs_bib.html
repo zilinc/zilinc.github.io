@@ -4,6 +4,7 @@
 
 <head>
 <title>references.bib</title>
+<link rel=stylesheet type="text/css" href="bib.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
 </pre>
 
 <a name="OConnorDavis_KAMKCR_14:tr"></a><pre>
-@report{<a href="pubs.html#OConnorDavis_KAMKCR_14:tr">OConnorDavis_KAMKCR_14:tr</a>,
+@misc{<a href="pubs.html#OConnorDavis_KAMKCR_14:tr">OConnorDavis_KAMKCR_14:tr</a>,
   author = {O'Connor, Liam and Keller, Gabriele and Amani, Sidney and Murray, Toby and Klein, Gerwin and Chen, Zilin and Rizkallah, Christine},
   institution = {NICTA},
   location = {Sydney, Australia},
@@ -41,7 +42,7 @@
 <a name="Amani_HCRCOBNLSTKMKH_16"></a><pre>
 @inproceedings{<a href="pubs.html#Amani_HCRCOBNLSTKMKH_16">Amani_HCRCOBNLSTKMKH_16</a>,
   author = {Amani, Sidney and Hixon, Alex and Chen, Zilin and Rizkallah, Christine and Chubb, Peter and O'Connor, Liam and Beeren, Joel and Nagashima, Yutaka and Lim, Japheth and Sewell, Thomas and Tuong, Joseph and Keller, Gabriele and Murray, Toby and Klein, Gerwin and Heiser, Gernot},
-  title = {Cogent: Verifying High-Assurance File System Implementations},
+  title = {\textsc{Cogent}: Verifying High-Assurance File System Implementations},
   year = {2016},
   isbn = {9781450340915},
   publisher = {Association for Computing Machinery},
@@ -91,7 +92,7 @@ and Keller, Gabriele
 and Klein, Gerwin},
   editor = {Blanchette, Jasmin Christian
 and Merz, Stephan},
-  title = {A Framework for the Automatic Formal Verification of Refinement from {Cogent} to {C}},
+  title = {A Framework for the Automatic Formal Verification of Refinement from \textsc{Cogent} to {C}},
   booktitle = {Interactive Theorem Proving},
   year = {2016},
   publisher = {Springer International Publishing},
@@ -120,7 +121,7 @@ and Merz, Stephan},
 <a name="Chen_OKKH_17"></a><pre>
 @inproceedings{<a href="pubs.html#Chen_OKKH_17">Chen_OKKH_17</a>,
   author = {Chen, Zilin and O'Connor, Liam and Keller, Gabriele and Klein, Gerwin and Heiser, Gernot},
-  title = {The Cogent Case for Property-Based Testing},
+  title = {The \textsc{Cogent} Case for Property-Based Testing},
   year = {2017},
   isbn = {9781450351539},
   publisher = {Association for Computing Machinery},
@@ -139,8 +140,8 @@ and Merz, Stephan},
 
 <a name="OConnorDavis_CSRKK_18"></a><pre>
 @inproceedings{<a href="pubs.html#OConnorDavis_CSRKK_18">OConnorDavis_CSRKK_18</a>,
-  author = {O’Connor, Liam and Chen, Zilin and Susarla, Partha and Rizkallah, Christine and Klein, Gerwin and Keller, Gabriele},
-  title = {Bringing Effortless Refinement of Data Layouts to Cogent},
+  author = {O'Connor, Liam and Chen, Zilin and Susarla, Partha and Rizkallah, Christine and Klein, Gerwin and Keller, Gabriele},
+  title = {Bringing Effortless Refinement of Data Layouts to \textsc{Cogent}},
   year = {2018},
   isbn = {978-3-030-03417-7},
   publisher = {Springer-Verlag},
@@ -163,14 +164,14 @@ and Merz, Stephan},
   booktitle = {PriSC},
   year = {2019},
   note = {at PriSC},
-  title = {{A} Data Layout Description Language for {Cogent} (Extended Abstract)}
+  title = {{A} Data Layout Description Language for \textsc{Cogent} (Extended Abstract)}
 }
 </pre>
 
 <a name="OConnor_CRJAKMSK_21"></a><pre>
 @article{<a href="pubs.html#OConnor_CRJAKMSK_21">OConnor_CRJAKMSK_21</a>,
-  author = {O’Connor, Liam and Chen, Zilin and Rizkallah, Christine and Jackson, Vincent and Amani, Sidney and Klein, Gerwin and Murray, Toby and Sewell, Thomas and Keller, Gabriele},
-  title = {Cogent: uniqueness types and certifying compilation},
+  author = {O'Connor, Liam and Chen, Zilin and Rizkallah, Christine and Jackson, Vincent and Amani, Sidney and Klein, Gerwin and Murray, Toby and Sewell, Thomas and Keller, Gabriele},
+  title = {\textsc{Cogent}: uniqueness types and certifying compilation},
   volume = {31},
   doi = {10.1017/S095679682100023X},
   journal = {Journal of Functional Programming},
@@ -200,36 +201,65 @@ and Merz, Stephan},
 }
 </pre>
 
-<a name="Chen_LOKMJR_22"></a><pre>
-@misc{<a href="pubs.html#Chen_LOKMJR_22">Chen_LOKMJR_22</a>,
-  author = {Chen, Zilin and Lafont, Ambroise and O'Connor, Liam and Keller, Gabriele and McLaughlin, Craig and Jackson, Vincent and Rizkallah, Christine},
-  booktitle = {The ACM SIGPLAN Symposium on Principles of Programming Languages},
-  year = {2022},
-  howpublished = {In submission to {The ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2023)}},
-  series = {POPL 2023},
-  title = {Dargent: A Silver Bullet for Data Layout Refinement}
-}
-</pre>
-
 <a name="Chen_Rizkallah_22"></a><pre>
 @misc{<a href="pubs.html#Chen_Rizkallah_22">Chen_Rizkallah_22</a>,
-  author = {Chen, Zilin and Rizkallah, Christine},
-  booktitle = {The ACM SIGPLAN International Conference on Software Language Engineering},
-  year = {2022},
-  howpublished = {In submission},
-  series = {SLE 2022},
-  title = {Why It's Nice to be Quoted: A \textsc{Cogent} {FFI}}
+  author = {Zilin Chen 
+           and Christine Rizkallah
+           },
+  year = 2022,
+  title = {Why It's Nice to be Quoted: A \textsc{Cogent} {FFI}},
+  note = {Paper draft}
 }
 </pre>
 
-<a name="Chen_RKSOHK_22"></a><pre>
-@misc{<a href="pubs.html#Chen_RKSOHK_22">Chen_RKSOHK_22</a>,
-  author = {Chen, Zilin and Rizkallah, Christine and Klein, Gerwin and Susarla, Partha and O'Connor, Liam and Heiser, Gernot and Keller, Gabriele},
-  booktitle = {The ACM SIGPLAN International Conference on Software Language Engineering},
-  year = {2022},
-  howpublished = {Accepted at {The ACM SIGPLAN International Conference on Software Language Engineering (SLE 2022)}},
+<a name="Chen_ROSKHK_22"></a><pre>
+@inproceedings{<a href="pubs.html#Chen_ROSKHK_22">Chen_ROSKHK_22</a>,
+  address = {Auckland, New Zealand},
+  artefact = {https://zenodo.org/record/7248640},
+  author = {Zilin Chen and Christine Rizkallah and Liam O'Connor and Partha Susarla and Gerwin Klein and Gernot
+                        Heiser and Gabriele Keller},
+  booktitle = {ACM SIGPLAN International Conference on Software Language Engineering},
+  doi = {10.1145/3567512.3567520},
+  month = dec,
+  numpages = {14},
+  paperurl = {https://trustworthy.systems/publications/papers/Chen_ROSKHK_22.pdf},
+  publisher = {ACM},
   series = {SLE 2022},
-  title = {Property-Based Testing: Climbing the Stairway to Verification}
+  title = {Property-Based Testing: Climbing the Stairway to Verification},
+  year = {2022}
+}
+</pre>
+
+<a name="Chen_LOKMJR_23"></a><pre>
+@article{<a href="pubs.html#Chen_LOKMJR_23">Chen_LOKMJR_23</a>,
+  address = {New York, NY, USA},
+  articleno = {47},
+  author = {Zilin Chen and Ambroise Lafont and Liam O’Connor and Gabriele Keller and Craig McLaughlin and
+                        Vincent Jackson and Christine Rizkallah},
+  doi = {10.1145/3571240},
+  journal = {Proc. ACM Program. Lang.},
+  month = jan,
+  number = {POPL},
+  numpages = {27},
+  paperurl = {https://trustworthy.systems/publications/papers/Chen_LOKMJR_23.pdf},
+  publisher = {ACM},
+  title = {\textsc{Dargent}: A Silver Bullet for Verified Data Layout Refinement},
+  url = {https://doi.org/10.1145/3571240},
+  volume = {7},
+  year = {2023}
+}
+</pre>
+
+<a name="Chen:phd"></a><pre>
+@phdthesis{<a href="pubs.html#Chen:phd">Chen:phd</a>,
+  address = {UNSW Sydney, Australia},
+  author = {Chen, Zilin},
+  month = mar,
+  school = {CSE, UNSW Sydney},
+  title = {Towards A Practical High-Assurance Systems Programming Language},
+  url = {<a href="http://hdl.handle.net/1959.4/101026">http://hdl.handle.net/1959.4/101026</a>},
+  doi = {https://doi.org/10.26190/unsworks/24733},
+  year = {2023}
 }
 </pre>
 
